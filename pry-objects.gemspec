@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["adrian.kuhn@airbnb.com"]
 
   spec.summary       = %q{Evaluate expression and print created objects.}
-  spec.homepage      = "https://github.com/akuhn/pry-tree"
+  spec.homepage      = "https://github.com/akuhn/pry-objects"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
