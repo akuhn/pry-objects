@@ -24,7 +24,7 @@ Pry::Commands.create_command 'objects' do
 
   group 'Debug'
   description 'Evaluate expression and print created objects.'
-  command_options argument_required: true, keep_retval: true
+  command_options argument_required: true, keep_retval: true, interpolate: false
 
   def process
     target.eval "objects = PryObjects.call(false) { #{arg_string} }"
